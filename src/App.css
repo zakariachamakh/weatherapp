@@ -1,0 +1,479 @@
+/* Styles common for Entire Page */
+.App {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 30% auto;
+}
+button {
+  cursor: pointer;
+  font-family: Raleway;
+  font-style: normal;
+  border: none;
+  background-color: transparent;
+}
+.material-icons {
+  align-self: center;
+}
+div {
+  text-align: center;
+}
+.error {
+  text-align: left;
+  color: tomato;
+  font-size: 14px;
+  padding: 10px 0;
+}
+img {
+  width: 100%;
+}
+.loader-container {
+  min-height: 70vh;
+  position: relative;
+  padding: 25%;
+}
+/* Spinner */
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #fff;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* End of styles common for Entire Page */
+
+/* SideBar Styles */
+.sidebar {
+  padding: 8% 0 5%;
+  min-height: 100vh;
+  background-color: #1e213a;
+}
+/* Search for Locations */
+.sidebar-header {
+  padding: 5% 8%;
+}
+.search-locations {
+  display: flex;
+  justify-content: space-between;
+  color: #e7e7eb;
+}
+.search-locations-button {
+  padding: 2% 5%;
+  align-self: center;
+  height: 40px;
+  background: #6e707a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #e7e7eb;
+  font-weight: 500;
+  font-size: 16px;
+}
+.search-locations-button:hover {
+  background-color: #c88c32;
+  box-shadow: none;
+}
+.icon-container {
+  cursor: pointer;
+  padding: 2px;
+  background: #6e707a;
+  border-radius: 50%;
+  height: 33px;
+  width: 33px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.icon-container:hover {
+  background-color: #c88c32;
+}
+/* Weather of Selected Location */
+.sidebar-sky-wrapper {
+  position: relative;
+  height: 325px;
+  width: 100%;
+}
+.sidebar-sky {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url("images/Cloud-background.png");
+  background-size: contain;
+  background-repeat: repeat-y;
+  filter: opacity(0.1) drop-shadow(0 0 0 #1e213a);
+}
+.image-container {
+  left: 40%;
+  position: absolute;
+  width: 25%;
+  top: 128.28px;
+  height: 100%;
+}
+/* Today's Weather */
+.temp-today {
+  font-weight: 500;
+  font-size: 144px;
+  color: #e7e7eb;
+  margin: 60px 0 0;
+}
+.temp-unit {
+  font-size: 45px;
+  color: #a09fb1;
+}
+.weather-state-name {
+  font-weight: 600;
+  font-size: 36px;
+  color: #a09fb1;
+  padding: 70px 0;
+}
+.date-container,
+.location-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 18px;
+  color: #88869d;
+}
+.location-container {
+  padding: 10px 0 0;
+}
+span.location-name {
+  align-self: center;
+}
+.date::before {
+  content: "\2219";
+  padding: 0 15px;
+}
+/* Choose Location */
+.search-location-container {
+  color: #e7e7eb;
+  margin: 0 30px;
+}
+.search-location-header {
+  text-align: right;
+  padding: 10px 0;
+  font-size: 24px;
+}
+.close-button {
+  cursor: pointer;
+}
+.search-box {
+  margin-bottom: 25px;
+}
+.select-location-container {
+  display: flex;
+  justify-content: space-between;
+}
+.select-location-button {
+  text-align: left;
+  padding: 10px;
+  width: 70%;
+  color: #616475;
+  font-size: 19px;
+  border: 2px solid #616475;
+}
+.select-location-button:hover {
+  border-color: #e7e7eb;
+}
+.placeholder {
+  align-self: center;
+  padding-left: 5px;
+}
+.search-button {
+  color: #e7e7eb;
+  font-size: 19px;
+  background-color: #3c47e9;
+  padding: 10px 5px;
+  width: 25%;
+}
+.select-button-contents {
+  display: flex;
+}
+.selected-option {
+  color: #e7e7eb;
+}
+.select-location-options {
+  font-size: 19px;
+  padding: 10px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.select-location-options:hover {
+  border: 1px solid #616475;
+  cursor: pointer;
+}
+.select-location-options:hover::after {
+  content: ">";
+  text-align: right;
+  float: right;
+}
+/* End of SideBar Styles */
+
+/* Main Content */
+.main-content {
+  margin: 5% 10%;
+}
+.header {
+  justify-content: right;
+  display: flex;
+  margin-bottom: 50px;
+}
+.temp-unit-selector {
+  cursor: pointer;
+  padding: 2px;
+  background: #585676;
+  border-radius: 50%;
+  height: 33px;
+  width: 33px;
+  display: flex;
+  justify-content: center;
+  color: #e7e7eb;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.temp-unit-selector.selected {
+  color: #110e3c;
+  background: #e7e7eb;
+}
+.temp-unit-selector > span {
+  align-self: center;
+}
+.day-weather-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.day-cards {
+  min-width: 100px;
+  min-height: 100px;
+  color: #e7e7eb;
+  background-color: #1e213a;
+  margin-bottom: 50px;
+  /* margin: 0 25px 50px; */
+  padding: 20px;
+}
+.day-image-container {
+  width: 56.44px;
+  height: 62px;
+  margin: 25px auto;
+}
+.min-max-temp-container {
+  display: flex;
+  justify-content: space-between;
+}
+.min-temp {
+  color: #a09fb1;
+}
+.highlights-heading {
+  font-weight: bold;
+  font-size: 24px;
+  color: #e7e7eb;
+  text-align: left;
+  padding: 2% 0 5%;
+}
+.highlights-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.highlight-card {
+  background-color: #1e213a;
+  width: 40%;
+  margin-bottom: 50px;
+  padding: 20px;
+  color: #e7e7eb;
+  padding: 25px;
+}
+.main-reading {
+  font-weight: bold;
+  font-size: 64px;
+  padding: 10px;
+  margin: 20px;
+}
+.flex-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wind-direction {
+  align-self: center;
+  padding: 0 10px;
+}
+.icon-container-direction {
+  padding: 5px;
+  background: #6e707a;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+}
+.indicator-container {
+  margin: 25px;
+}
+.indicator-divisions {
+  display: flex;
+  justify-content: space-between;
+}
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+progress::-webkit-progress-bar {
+  height: 11px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #e7e7eb;
+  border-radius: 80px;
+}
+progress::-webkit-progress-value {
+  float: left;
+  height: 11px;
+  background: #ffec65;
+  border-radius: 80px;
+}
+.humidity-unit {
+  float: right;
+}
+/* End of Main Content */
+/* Footer */
+.footer {
+  color: #a09fb1;
+}
+
+.footer > a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: inherit;
+}
+/* End of Footer */
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .App {
+    grid-template-columns: 40% auto;
+  }
+  .main-content {
+    margin: 5% 8%;
+  }
+  .day-cards,
+  .highlight-card {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .highlights-container,
+  .day-weather-cards-container {
+    justify-content: center;
+  }
+  .day-cards {
+    width: 60%;
+  }
+  .highlight-card {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .App {
+    grid-template-columns: 1fr;
+  }
+  .main-content {
+    margin: 5% 3%;
+  }
+  .highlights-container,
+  .day-weather-cards-container {
+    justify-content: space-between;
+  }
+  .day-cards {
+    width: 40%;
+  }
+  .highlight-card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .highlights-container,
+  .day-weather-cards-container {
+    justify-content: center;
+    gap: 10px;
+  }
+  .day-cards {
+    width: 35%;
+  }
+}
