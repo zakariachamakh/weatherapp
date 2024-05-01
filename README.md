@@ -1,17 +1,3 @@
-# Country
-
-Solution for the [Weather App Challenge](https://legacy.devchallenges.io/challenges/mM1UIenRhK808W8qmLWv) from [Devchallenges.io](https://legacy.devchallenges.io).
-
-<!-- TABLE OF CONTENTS -->
-
-## Table of Contents
-
-- [Challenge](#challenge)
-- [Solution](#solution)
-  - [Demo](#demo)
-  - [Built With](#built-with)
-- [How to Use](#how-to-use)
-- [Acknowledgements](#acknowledgements)
 
 <!-- Challenge -->
 
@@ -37,10 +23,6 @@ Fulfill user stories below:
 <!-- Solution -->
 
 ## Solution
-
-### Demo
-
-Find the site in action [here](https://keen-goldwasser-9930f9.netlify.app/)!
 
 #### Main Page
 
@@ -72,22 +54,6 @@ Mobile View Part 3
 
 - [React](https://reactjs.org/)
 
-<!-- How To Use -->
-
-## How To Use
-
-To clone and run this application, you'll need [Git](https://git-scm.com) and [yarn](https://yarnpkg.com/). From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/anuva312/WeatherApp-devChallenges
-
-# Install dependencies
-$ yarn install
-
-# Run the app
-$ yarn start
-```
 
 <!-- Acknowledgements -->
 
